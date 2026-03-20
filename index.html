@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathAtlas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MathAtlas</h1>
+        <p>An interactive map of mathematical knowledge</p>
+    </header>
 
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="algebra/quadratic-formula.html">Algebra</a> |
+        <a href="geometry/pythagorean-theorem.html">Geometry</a> |
+        <a href="symbols/pi.html">Symbols</a>
+    </nav>
+
+    <!-- Search bar -->
+    <section id="search-section">
+        <input type="text" id="searchBox" placeholder="Search formulas, theorems, or symbols...">
+        <button onclick="search()">Search</button>
+    </section>
+
+    <!-- Main content -->
+    <main>
+        <h2>Welcome to MathAtlas</h2>
+        <p>Explore formulas, concepts, and symbols, all organized into categories. Click a category above or search for a topic to get started.</p>
+
+        <!-- Example placeholder for a formula -->
+        <div class="formula-card">
+            <h3>Quadratic Formula</h3>
+            <p><strong>Formula:</strong> x = (-b ± √(b² - 4ac)) / 2a</p>
+            <p><strong>Explanation:</strong> Solves quadratic equations of the form ax² + bx + c = 0.</p>
+            <p><strong>Example:</strong> Solve x² + 3x + 2 = 0 → x = -1, -2</p>
+            <p><strong>Related:</strong> Parabolas, Factoring</p>
+        </div>
+    </main>
+</body>
+</html>
