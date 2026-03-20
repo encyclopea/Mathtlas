@@ -31,15 +31,27 @@
     <main>
         <h2>Welcome to MathAtlas</h2>
         <p>Explore formulas, concepts, and symbols, all organized into categories. Click a category above or search for a topic to get started.</p>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Encyclopea | MathAtlas</p>
+    </footer>
 
-        <!-- Example placeholder for a formula -->
-        <div class="formula-card">
-            <h3>Quadratic Formula</h3>
-            <p><strong>Formula:</strong> x = (-b ± √(b² - 4ac)) / 2a</p>
-            <p><strong>Explanation:</strong> Solves quadratic equations of the form ax² + bx + c = 0.</p>
-            <p><strong>Example:</strong> Solve x² + 3x + 2 = 0 → x = -1, -2</p>
-            <p><strong>Related:</strong> Parabolas, Factoring</p>
-        </div>
-    </main>
+    <script src="js/script.js"></script>
+    <script>
+        // Basic search functionality
+        function search() {
+            const input = document.getElementById("searchBox").value.toLowerCase();
+
+            if (input.includes("quadratic") || input.includes("algebra")) {
+                window.location.href = "algebra/quadratic-formula.html";
+            } else if (input.includes("pythagorean") || input.includes("geometry")) {
+                window.location.href = "geometry/pythagorean-theorem.html";
+            } else if (input.includes("pi") || input.includes("symbol")) {
+                window.location.href = "symbols/pi.html";
+            } else {
+                alert("No results found.");
+            }
+        }
+    </script>
 </body>
 </html>
